@@ -3,8 +3,8 @@
 //variables
 
 $color-principal: rgb(252, 213, 85);
-$color-secundario: rgb(252, 147, 143);
-$color-secundario-btn: rgb(177, 168, 157);
+$color-secundario: rgb(255, 247, 247);
+$color-secundario-btn: rgb(218, 175, 175);
 
 
 *{
@@ -39,6 +39,70 @@ header{
         font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; 
     }
 
+}
+
+.contenedorLogo{
+    img{
+        width: 8rem;
+        padding: 4%;}
+}
+
+/* CARRUSEL */
+.slide{
+    margin-top: 10px;
+    img{
+        height: 450px;
+        
+    }
+}
+
+/* TIENDA */
+main{
+    .contenedorCards{
+        display: flex;
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+        margin: 2% 0 2% 0 ;}
+        .card{
+            width: 18rem;
+            border: 2px solid rgb(255, 255, 255);
+            background-color: black;
+            border-radius: 20px;
+            margin-bottom: 2%;
+        }
+        .card:hover{
+            box-shadow: 10px 10px 10px  black;
+        
+        }
+        .contImgCard .imgCard{
+            padding: 0.5rem;
+            border-radius: 20px;
+            width: 100%;
+            height: 24rem;
+        }
+        .contTxtCard{
+            color: white;
+            font-size: 20px;
+            font-weight: bolder;
+            text-align: center;
+        }
+        .contBtnCard{
+            margin-bottom: 1.5%;
+            display: flex;
+            justify-content: center;
+        }
+        .btnComprar{
+            width: 95%;
+            border-radius: 20px;
+            border: 0;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            font-size: 30px;
+            font-weight: bolder;
+        }
+        .btnComprar:hover{
+            color: white;
+            border: 2px solid white;
+        }
 }
 
 /* GRID */
@@ -111,6 +175,49 @@ main{
     }
 }
 
+/* ENVIOS */
+
+.imagenMaps{
+    display: flex;
+    justify-content: center;
+}
+
+/* NOVEDADES */
+
+main{
+    .bannerNov{
+        display: flex;
+        justify-content: center;
+    }
+    .bannerNov :hover{
+        box-shadow: 10px 10px 10px  black;
+    }
+    .bannerImg{
+        margin-top: 1%;
+    }
+    .contenedorNovedades{
+        display: flex;
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+        margin: 2% 0 2% 0 ;}
+        .contenedorImg .contImg{
+            padding: 0.5rem;
+            border-radius: 20px;
+            width: 100%;
+            height: 24rem;
+        }
+        .contenedorImg :hover{
+            box-shadow: 10px 10px 10px  black;
+        }
+        .pulsarCompra{
+            display: flex;
+            justify-content: center;
+            background-color: rgb(201, 119, 119);
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+    }
+
+
 
 
 footer{
@@ -149,7 +256,7 @@ footer{
         display: grid;
         align-items: center;
         justify-content: center;
-        grid-template-columns: repeat(3,auto);
+        grid-template-columns: repeat(1,auto);
         gap: 6px;
     }
 }

@@ -4,7 +4,7 @@
   box-sizing: border-box; }
 
 body {
-  background-color: #fc938f; }
+  background-color: #fff7f7; }
 
 header {
   background-color: #fcd555;
@@ -23,6 +23,62 @@ header {
     font-size: 18px;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; }
 
+.contenedorLogo img {
+  width: 8rem;
+  padding: 4%; }
+
+/* CARRUSEL */
+.slide {
+  margin-top: 10px; }
+  .slide img {
+    height: 450px; }
+
+/* TIENDA */
+main .contenedorCards {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  margin: 2% 0 2% 0; }
+
+main .card {
+  width: 18rem;
+  border: 2px solid white;
+  background-color: black;
+  border-radius: 20px;
+  margin-bottom: 2%; }
+
+main .card:hover {
+  box-shadow: 10px 10px 10px  black; }
+
+main .contImgCard .imgCard {
+  padding: 0.5rem;
+  border-radius: 20px;
+  width: 100%;
+  height: 24rem; }
+
+main .contTxtCard {
+  color: white;
+  font-size: 20px;
+  font-weight: bolder;
+  text-align: center; }
+
+main .contBtnCard {
+  margin-bottom: 1.5%;
+  display: flex;
+  justify-content: center; }
+
+main .btnComprar {
+  width: 95%;
+  border-radius: 20px;
+  border: 0;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-size: 30px;
+  font-weight: bolder; }
+
+main .btnComprar:hover {
+  color: white;
+  border: 2px solid white; }
+
 /* GRID */
 html {
   background-color: #f8b467; }
@@ -32,7 +88,7 @@ html {
   min-height: 800px;
   padding: 50px 0;
   margin: 1% auto;
-  background-color: #b1a89d;
+  background-color: #daafaf;
   display: grid;
   align-items: center;
   justify-content: center;
@@ -79,6 +135,43 @@ main {
     width: 50px;
     height: 50px; }
 
+/* ENVIOS */
+.imagenMaps {
+  display: flex;
+  justify-content: center; }
+
+/* NOVEDADES */
+main .bannerNov {
+  display: flex;
+  justify-content: center; }
+
+main .bannerNov :hover {
+  box-shadow: 10px 10px 10px  black; }
+
+main .bannerImg {
+  margin-top: 1%; }
+
+main .contenedorNovedades {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  margin: 2% 0 2% 0; }
+
+main .contenedorImg .contImg {
+  padding: 0.5rem;
+  border-radius: 20px;
+  width: 100%;
+  height: 24rem; }
+
+main .contenedorImg :hover {
+  box-shadow: 10px 10px 10px  black; }
+
+main .pulsarCompra {
+  display: flex;
+  justify-content: center;
+  background-color: #c97777;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; }
+
 footer {
   background-color: #fcd555;
   grid-area: footer;
@@ -100,7 +193,7 @@ footer {
     display: grid;
     align-items: center;
     justify-content: center;
-    grid-template-columns: repeat(3, auto);
+    grid-template-columns: repeat(1, auto);
     gap: 6px; } }
 
 @media screen and (max-width: 360px) {
